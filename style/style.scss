@@ -1,0 +1,125 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.wrapper{
+	display: block;
+	position: relative;
+
+}
+
+.img-sect{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 100vh;
+	background-image: url(../img/typewriter.jpg);
+	background-size: cover;
+	background-position: center;
+}
+	
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 100px;
+	left: 100vh;
+}
+
+.first-layer{
+	color: #fff;
+	padding: 0 15px;
+	// max-width: 760px;
+	text-align: center;
+
+	h1{
+		font-size: 6.5rem;
+		font-weight: 700;
+		color: #e4e3e8;
+
+
+	}
+
+	p{
+		font-size: 2rem;
+		margin-top: 10px;
+		color: #171718;
+		font-style: italic;
+	}
+}
+
+.second-layer{
+	display: block;
+	padding: 6px;
+	margin: 45px 0 15px;
+	align-items: center;
+	height: 400px;
+	width: 900px;
+	background-color: #fff;
+	border-radius: 30px;
+
+
+	textarea{
+		// width: 600px;
+		height: inherit;
+		width: inherit;
+
+		font-size: 14px;
+		line-height: 1.15;
+
+		outline: none;
+		border: none;
+		background: none;
+		padding: 10px 30px 10px 10px;
+	}
+	
+}
+
+.buttons{
+	display: flex;
+	height: 60px;
+	margin-top: 20px;
+	justify-content: center;
+	gap: 20px;
+
+	button{
+		background-color: #8c868a;
+		color: #e4e3e8;
+		border: 3px solid #e4e3e8;
+		padding: 10px;
+		border-radius: 10%;
+		font-weight: bold;
+		font-size: 25px;
+		transition: all 0.3s ease;
+
+	}
+
+	button:hover{
+		background-color: #6e6b6d;
+
+	}
+
+	button:active{
+		background-color: #504e4f;
+
+	}
+}
+
+.lowerArea{
+	text-transform: lowercase;
+}
+
+.upperArea{
+	text-transform: uppercase;
+}
