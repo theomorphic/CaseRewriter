@@ -10,7 +10,7 @@ body{
 	font-weight: 400;
 	font-style: normal;
 	user-select: none;
-	// background-color: #57bccf;
+	background-color: #57bccf;
 	
 }
 
@@ -27,7 +27,6 @@ section{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: absolute;
 	
 }
 
@@ -139,7 +138,6 @@ section{
 	.main-wrapper{
 		background-image: none;
 		background-color: #57bccf;
-		border: 3px solid red;
 
 		display: flex;
 		flex-direction: column;
@@ -149,7 +147,6 @@ section{
 
 	.functional-area{
 		margin-left: 0;
-		border: 3px solid black;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -157,9 +154,39 @@ section{
 
 		height: 60vh;
 		width: 100vw;
+
+		p{
+			color: #504e4f;
+		}
 	}
 	
 	.buttons{
 		margin-bottom: 20px;
 	}
+
+}
+
+@media screen and (max-width:684px){
+	
+	.functional-area{
+		.text-holder{
+			display: none;
+		}
+		.buttons{
+			display: none;
+		}
+	
+		h1{
+			display: none;
+		}
+	
+		p{
+
+			color: #171718;
+		}
+	}
+	
+
+
+
 }
