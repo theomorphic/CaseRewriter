@@ -13,16 +13,8 @@ body {
           user-select: none;
 }
 
-.wrapper {
-  display: block;
-  position: relative;
-}
-
-.img-sect {
+.main-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
   height: 100vh;
   background-image: url(../img/typewriter.jpg);
   background-size: cover;
@@ -34,45 +26,49 @@ section {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 100px;
-  left: 100vh;
 }
 
-.first-layer {
+.functional-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   padding: 0 15px;
   text-align: center;
+  margin-top: 100px;
+  margin-left: 45vw;
 }
-.first-layer h1 {
+.functional-area h1 {
   font-size: 6.5rem;
   font-weight: 700;
   color: #e4e3e8;
 }
-.first-layer p {
+.functional-area p {
   font-size: 2rem;
   margin-top: 10px;
   color: #171718;
   font-style: italic;
 }
 
-.second-layer {
+.text-holder {
   display: block;
+  width: 47.7vw;
+  height: 45.2vh;
   padding: 6px;
-  margin: 45px 0 15px;
-  align-items: center;
-  height: 400px;
-  width: 900px;
-  background-color: #fff;
-  border-radius: 30px;
+  margin: 25px 0 10px;
+  background-color: #e4e3e8;
+  border-radius: 10px;
 }
-.second-layer textarea {
-  height: inherit;
-  width: inherit;
+.text-holder textarea {
+  width: 46.7vw;
+  height: 43.5vh;
+  background-color: #fff;
+  border-radius: inherit;
   font-size: 14px;
   line-height: 1.15;
   outline: none;
   border: none;
-  background: none;
   padding: 10px 30px 10px 10px;
 }
 
@@ -86,12 +82,13 @@ section {
 .buttons button {
   background-color: #8c868a;
   color: #e4e3e8;
-  border: 3px solid #e4e3e8;
+  border: 5px solid #e4e3e8;
   padding: 10px;
   border-radius: 10%;
   font-weight: bold;
   font-size: 25px;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .buttons button:hover {
   background-color: #6e6b6d;
@@ -106,4 +103,33 @@ section {
 
 .upperArea {
   text-transform: uppercase;
+}
+
+.capArea {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1243px) {
+  .main-wrapper {
+    background-image: none;
+    background-color: #57bccf;
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .functional-area {
+    margin-left: 0;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100vw;
+  }
+  .buttons {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
