@@ -72,7 +72,4 @@ norm_btn.onclick = function(){
 	};
 
 	tear.classList.toggle("normArea");
-}
-
-
-
+};

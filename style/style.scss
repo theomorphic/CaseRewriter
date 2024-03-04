@@ -45,7 +45,7 @@ section{
 
 
 	h1{
-		font-size: 6.5rem;
+		font-size: 6rem;
 		font-weight: 700;
 		color: #e4e3e8;
 
@@ -60,6 +60,8 @@ section{
 	}
 }
 
+
+
 .text-holder{
 	display: block;
 	width: 47.7vw;
@@ -69,7 +71,7 @@ section{
 	margin: 25px 0 10px;
 	background-color: #e4e3e8;
 	border-radius: 10px;
-
+	position: relative;
 
 
 	textarea{
@@ -91,20 +93,23 @@ section{
 
 .buttons{
 	display: flex;
-	height: 60px;
+	height: 6.2vh;
 	margin-top: 20px;
 	justify-content: center;
 	gap: 20px;
-	
+
 
 	button{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background-color: #8c868a;
 		color: #e4e3e8;
 		border: 5px solid #e4e3e8;
 		padding: 10px;
 		border-radius: 10%;
 		font-weight: bold;
-		font-size: 25px;
+		font-size: 1.5rem;
 		transition: all 0.3s ease;
 		cursor: pointer;
 
@@ -155,6 +160,9 @@ section{
 		justify-content: center;
 		align-items: center;
 
+		margin-top: 50px;
+
+
 		height: 60vh;
 		width: 100vw;
 
@@ -172,6 +180,9 @@ section{
 @media screen and (max-width:684px){
 	
 	.functional-area{
+
+		margin-top: 20px;
+
 		.text-holder{
 			display: none;
 		}
@@ -184,6 +195,7 @@ section{
 		}
 	
 		p{
+			font-size: 2.5rem;
 
 			color: #171718;
 		}
