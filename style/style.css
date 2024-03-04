@@ -109,6 +109,10 @@ section {
   text-transform: capitalize;
 }
 
+.normArea {
+  text-transform: none;
+}
+
 @media screen and (max-width: 1243px) {
   .main-wrapper {
     background-image: none;
