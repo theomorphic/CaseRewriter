@@ -4,7 +4,9 @@ const cap_btn = document.getElementById("cap_btn");
 const up_btn = document.getElementById("up_btn");
 const norm_btn = document.getElementById("norm_btn");
 
-// const copy_btn = document.getElementById("cope_btn");
+const copy_btn = document.getElementById("copy_btn");
+const copy_del = document.getElementById("copy_del");
+
 
 
 const tear = document.getElementById("textarea");
@@ -72,4 +74,17 @@ norm_btn.onclick = function(){
 	};
 
 	tear.classList.toggle("normArea");
+};
+
+
+copy_btn.onclick = function(){
+	tear.select();
+	document.execCommand("copy");
+	window.getSelection().removeAllRanges();
+};
+
+copy_del.onclick = function(){
+	tear.select();
+	document.execCommand("delete");
+	window.getSelection().removeAllRanges();
 };

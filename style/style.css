@@ -16,6 +16,7 @@ body {
 
 .main-wrapper {
   display: flex;
+  justify-content: center;
   height: 100vh;
   background-image: url(../img/typewriter.jpg);
   background-size: cover;
@@ -36,7 +37,6 @@ section {
   color: #fff;
   padding: 0 15px;
   text-align: center;
-  margin-top: 100px;
   margin-left: 45vw;
 }
 .functional-area h1 {
@@ -66,6 +66,7 @@ section {
   height: 43.5vh;
   background-color: #fff;
   border-radius: inherit;
+  resize: none;
   font-size: 14px;
   line-height: 1.15;
   outline: none;
@@ -73,12 +74,13 @@ section {
   padding: 10px 30px 10px 10px;
 }
 
-.buttons {
+.buttons .case,
+.buttons .copy-del {
   display: flex;
   height: 6.2vh;
   margin-top: 20px;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 .buttons button {
   display: flex;
@@ -93,6 +95,18 @@ section {
   font-size: 1.5rem;
   transition: all 0.3s ease;
   cursor: pointer;
+}
+.buttons .low {
+  background-color: #a7a5a5;
+}
+.buttons .cap {
+  background-color: #7c7b7c;
+}
+.buttons .up {
+  background-color: #868686;
+}
+.buttons .del {
+  background-color: #837e81;
 }
 .buttons button:hover {
   background-color: #6e6b6d;
