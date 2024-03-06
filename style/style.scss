@@ -90,7 +90,6 @@ section{
 }
 
 .buttons{
-
 	.case,
 	.copy-del{
 		display: flex;
@@ -131,7 +130,12 @@ section{
 	}
 
 	.del{
-		background-color: #837e81;
+		background-color: #999898;
+	}
+
+	.paste{
+		background-color: #9b9598;
+
 	}
 
 	button:hover{

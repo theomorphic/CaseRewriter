@@ -106,7 +106,10 @@ section {
   background-color: #868686;
 }
 .buttons .del {
-  background-color: #837e81;
+  background-color: #999898;
+}
+.buttons .paste {
+  background-color: #9b9598;
 }
 .buttons button:hover {
   background-color: #6e6b6d;

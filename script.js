@@ -5,7 +5,9 @@ const up_btn = document.getElementById("up_btn");
 const norm_btn = document.getElementById("norm_btn");
 
 const copy_btn = document.getElementById("copy_btn");
-const copy_del = document.getElementById("copy_del");
+const del_btn = document.getElementById("copy_del");
+const paste_btn = document.getElementById("paste_btn");
+
 
 
 
@@ -83,8 +85,14 @@ copy_btn.onclick = function(){
 	window.getSelection().removeAllRanges();
 };
 
-copy_del.onclick = function(){
+del_btn.onclick = function(){
 	tear.select();
 	document.execCommand("delete");
 	window.getSelection().removeAllRanges();
 };
+
+paste_btn.onclick = async()=>{
+	const reader = await navigator.clipboard.readText();
+	tear.value = reader;
+
+}
