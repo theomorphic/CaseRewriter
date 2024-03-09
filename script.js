@@ -99,9 +99,9 @@ paste_btn.onclick = async()=>{
 	} catch(error){
 		if(error instanceof TypeError){
 			let stupidMessage = "It doesn't work here. Use a normal browser, you retard";
-			let idiocy = function (){
+			(function (){
 				tear.value = stupidMessage;
-			}();
+			}());
 			console.warn(stupidMessage);
 
 		}
