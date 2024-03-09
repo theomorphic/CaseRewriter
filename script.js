@@ -91,8 +91,20 @@ del_btn.onclick = function(){
 	window.getSelection().removeAllRanges();
 };
 
+
 paste_btn.onclick = async()=>{
-	const reader = await navigator.clipboard.readText();
-	tear.value = reader;
+	try{
+		const reader = await navigator.clipboard.readText();
+		tear.value = reader;
+	} catch(error){
+		if(error instanceof TypeError){
+			let stupidMessage = "It doesn't work here. Use a normal browser, you retard";
+			let idiocy = function (){
+				tear.value = stupidMessage;
+			}();
+			console.warn(stupidMessage);
+
+		}
+	}
 
 }
