@@ -9,9 +9,15 @@ const del_btn = document.getElementById("copy_del");
 const paste_btn = document.getElementById("paste_btn");
 
 
-
-
 const tear = document.getElementById("textarea");
+
+const zeroSpaces = function(){
+	tear;
+	let spaces = /_+/gi;
+	let userreview1 = tear.value;
+	let userreview2 = userreview1.replace(spaces, "___");
+	document.getElementById("textarea").value = userreview2;
+};
 
 low_btn.onclick = function (){
 
@@ -27,8 +33,10 @@ low_btn.onclick = function (){
 	};
 
 	tear.classList.toggle("lowerArea");
+	zeroSpaces();
 
 };
+
 
 up_btn.onclick = function (){
 
@@ -44,6 +52,8 @@ up_btn.onclick = function (){
 	};
 
 	tear.classList.toggle("upperArea");
+	zeroSpaces();
+
 };
 
 cap_btn.onclick = function (){
@@ -61,6 +71,8 @@ cap_btn.onclick = function (){
 
 
 	tear.classList.toggle("capArea");
+	zeroSpaces();
+
 };
 
 norm_btn.onclick = function(){
@@ -76,6 +88,8 @@ norm_btn.onclick = function(){
 	};
 
 	tear.classList.toggle("normArea");
+	zeroSpaces();
+
 };
 
 
@@ -102,9 +116,10 @@ paste_btn.onclick = async()=>{
 			(function (){
 				tear.value = stupidMessage;
 			}());
-			console.warn(stupidMessage);
 
 		}
 	}
+	zeroSpaces();
+
 
 }
