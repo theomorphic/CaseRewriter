@@ -19,6 +19,7 @@ const zeroSpaces = function(){
 	document.getElementById("textarea").value = userreview2;
 };
 
+
 low_btn.onclick = function (){
 
 	if(tear.classList.toggle("upperArea")){
@@ -88,7 +89,7 @@ norm_btn.onclick = function(){
 	};
 
 	tear.classList.toggle("normArea");
-	zeroSpaces();
+	zeroSpaces();	
 
 };
 
